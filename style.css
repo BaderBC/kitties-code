@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url('assets/kitties-background.svg');
+    background-size: 1000px 1000px;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+main > h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 95%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form > textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form > button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#meow-morse-result {
+    display: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
